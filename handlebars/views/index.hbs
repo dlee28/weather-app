@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">  
+    <script src="/js/app.js"></script>
+</head>
+
+<body>
+    <div class='main-content'>
+        {{>header}}
+        <img class="regpic" src="/img/pizza.jpeg" alt="pizza">
+
+        <form action="">
+            <input placeholder='city'>
+            <button>
+                search
+            </button>
+        </form>
+
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+        <p id="message-3"></p>
+
+    </div>
+
+    {{>footer}}
+
+    <script src="/js/formListener.js"></script>
+</body>
+
+</html>

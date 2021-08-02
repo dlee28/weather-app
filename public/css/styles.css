@@ -1,0 +1,76 @@
+body {
+  margin: 0 auto;
+  background-color: rgba(139, 129, 129, 0.61);
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  /* max-width: 650px; */
+  padding: 0 16px;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+/* Applies to all <h1>...</h1> elements. */
+h1 {
+    color: rgb(53, 53, 61);
+    font-size: 55px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: DarkSalmon;
+    color: white;
+}
+
+/* only a wtih in header */
+header a {
+    color: #2d2d33;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+.regpic {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+/* .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+} */
+
+/* Applies to all elements with <... class="someclass"> specified. */
+.someclass { color: rgb(80, 80, 80); }
+
+/* Applies to the element with <... id="someid"> specified. */
+#someid { color: green; }
