@@ -3,7 +3,7 @@ const search = document.querySelector('input');
 const messageOne = document.querySelector('#message-1');
 const messageTwo = document.querySelector('#message-2');
 const messageThree = document.querySelector('#message-3');
-
+const messageFour = document.querySelector('#message-4');
 
 
 messageOne.textContent = 'Please Make a Search ... ';
@@ -21,10 +21,10 @@ weatherForm.addEventListener('submit', (e) => {
                 console.log(data.error);
                 messageOne.textContent = data.error;
             } else {
-                console.log(data);
                 messageOne.textContent = data.location;
                 messageTwo.textContent = data.forecast;
                 messageThree.textContent = data.precip;
+                messageFour.textContent = data.windSpeed;
             };
         });
     });

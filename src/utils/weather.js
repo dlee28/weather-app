@@ -15,7 +15,8 @@ const getWeather = (latitude, longitude, callback) => {
         else {
             callback(error, {
                 temperature: body.current.temperature,
-                precip: body.current.precip
+                precip: body.current.precip,
+                windSpeed: body.current.wind_speed
             });
         }
     });
@@ -28,5 +29,9 @@ const printDegrees = (body) => {
 const printRain = (body) => {
     console.log('chance of rain is ' + body.current.precip);
 };
+
+const printWindSpeed = (body) => {
+    console.log('wind speed is ' + body.current.wind_speed);
+}
 
 module.exports = getWeather;
